@@ -1,4 +1,4 @@
-name = "聪明猫"
+name = "蠢萌猪"
 password = "1234567"
 n = 3
 while (n > 0):
