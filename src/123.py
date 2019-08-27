@@ -4,14 +4,10 @@ job = input("job:")
 salary = input("salary:")
 msg = '''
 --------info of %s---------
-name: %s
+name: %s  
 age: %d
 job: %s
 salary: %d
 ---------end----------
-''' % (name,name,age,job,salary)
-print (msg)
-
-
-
-
+''' % (name, name, age, job, salary)
+print(msg)
