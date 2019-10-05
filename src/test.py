@@ -31,8 +31,29 @@
 # even_numbers = list(range(1,20,2))
 # print(even_numbers)
 
-# 列表解析
-squares=[value**3 for value in range(1,11)]
-print(squares)
+# # 列表解析
+# squares=[value**3 for value in range(1,11)]
+# print(squares)
+#
+# 元素切片
 
+# import copy
+#
+# a = [[1, 2], 3, 4]
+# # b=a.copy() #浅copy
+# c = a.copy()
+# b = copy.deepcopy(a)
+# # b=a #同一链接
+# a[0][1] = 4
+# print(a, b, c)
 
+def logger(n):
+    with open("日志记录","a") as f:
+        f.write("end action%s\n"%n)
+def action(n):
+    print("start action%s\n"%n)
+    logger(n)
+
+action(11)
+action(12)
+action(13)
