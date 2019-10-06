@@ -10,13 +10,13 @@ ret = filter(fun1, str)
 print(list(ret))  # ret是一个迭代器对象,不占用内存，现在采用list进行转化
 
 # 2.map(加标记）
-str = [1, 2, 'a', 'b']
-def fun2(s):
-    return (s + "alvin")
-ret = map(fun2, str)
-
-print(ret)  # map object的迭代器
-print(list(ret))  # ['aalvin', 'balvin', 'calvin', 'dalvin']
+# str = [1, 2, 'a', 'b']
+# def fun2(s):
+#     return (s + "alvin")
+# ret = map(fun2, str)
+#
+# print(ret)  # map object的迭代器
+# print(list(ret))  # ['aalvin', 'balvin', 'calvin', 'dalvin']
 
 
 # 3. reduce  据说很重要
