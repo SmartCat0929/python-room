@@ -47,13 +47,14 @@
 # a[0][1] = 4
 # print(a, b, c)
 
-def logger(n):
-    with open("日志记录","a") as f:
-        f.write("end action%s\n"%n)
-def action(n):
-    print("start action%s\n"%n)
-    logger(n)
+# def logger(n):
+#     with open("日志记录","a") as f:
+#         f.write("end action%s\n"%n)
+# def action(n):
+#     print("start action%s\n"%n)
+#     logger(n)
+#
+# action(11)
+# action(12)
+# action(13)
 
-action(11)
-action(12)
-action(13)
