@@ -19,7 +19,7 @@ print(ret)  # map object的迭代器
 print(list(ret))  # ['aalvin', 'balvin', 'calvin', 'dalvin']
 
 
-# 3. reduce
+# 3. reduce  据说很重要
 from functools import reduce #python要首先引入该行代码
 def add1(x, y):
     return x + y
