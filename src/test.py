@@ -58,3 +58,12 @@
 # action(12)
 # action(13)
 
+lizi=[1,2,3]
+alizi=lizi.__iter__()
+# for i in alizi:
+p=next(alizi)
+pr=next(alizi)
+print(p)
+print(pr)
+print(type(lizi))
+print(type(alizi))
