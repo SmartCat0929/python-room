@@ -29,6 +29,7 @@ print(ret)
 ret=re.findall("h{1,4}l","hehhhhllo world wh\tll")
 print(ret)
 
+# 元字符 []
 ret=re.findall("h[e, ,l]l","h lo world wh\tll") #表示e或者 或者l
 print(ret)
 ret=re.findall("h[e-l]l","hglo world wh\tll")  #表示e-l的意思
@@ -38,7 +39,7 @@ print(ret)
 ret=re.findall("[1-9，a-z,A-Z]","12ad5ADGH")# 字符集 []  [a,b]代表a或者b的意思;
 print(ret)
 # ^放在[]里面的，表示 取反
-ret=re.findall("[5,G]","12ad5ADGH")  #除去5和G的所有展示
+ret=re.findall("[5,G]","12ad5ADGH")  #展示5和G
 print(ret)
 ret=re.findall("[^5,G]","12ad5ADGH")  #除去5和G的所有展示
 print(ret)
@@ -60,6 +61,8 @@ print(re.search("sb","dfsfhjhsdi88sbjiiusb").group()) #group 显示结果
 
 ret=re.findall(r"\\","abc\de")
 print(ret)
+print(type(ret))
+
 ret=re.findall(r"\babc","abc\de") #r表示原生，用re语言解析
 print(ret)
 
@@ -74,8 +77,11 @@ print(re.search("4|as+","sd4dhjhjash4d").group())
 # 4. split():将给定值作为分隔符
 # 5. sub(): 进行替换
 
-print(re.split("3","868u3khy"))
+ret=(re.split("3","868u3khy"))
+print(ret)
+print(type(ret))
 print(re.split("[3,j]","3868u3jkhy"))#['', '868u', '', 'khy']
 
 ret=re.sub("a..s","rfft","utuuahusyu")
 print(ret)
+print(type(ret))
