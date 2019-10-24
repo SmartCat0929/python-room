@@ -1,6 +1,5 @@
 import re
 
-
 def md(l, x):
     a = l.index(x)
     if x == '*' and l[a + 1] != '-':
