@@ -5,6 +5,7 @@ print(base_dir)
 sys.path.append(base_dir)
 
 from core import main
+
 if __name__ == '__main__':
     main.run()
 
