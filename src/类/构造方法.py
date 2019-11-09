@@ -1,3 +1,4 @@
+#如果多个函数中有一些相同参数时，可以转化成面向对象
 class Person:
     def __init__(self, name, age):
         self.n = name
