@@ -17,4 +17,4 @@ hebei = Province("河北")
 print(Province.country)
 henan.appear()
 hebei.appear()
-
+# print(henan.country)
