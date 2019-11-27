@@ -12,7 +12,7 @@ choice = g.choicebox(msg, title, choices)
 g.msgbox("你的选择是：" + str(choice), "结果")
 msg = "你希望重新选择你的梦想吗？"
 title = "请选择"
-if g.ccbox(msg, title):
-    pass
+if g.ccbox(msg, title,choices=("坚持","动摇")):
+    g.msgbox("太棒了，祝你早日实现梦想！")
 else:
     sys.exit(0)
